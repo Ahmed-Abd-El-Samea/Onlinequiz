@@ -1,0 +1,45 @@
+body{
+	background-color: #0C8542;
+	background-image: url("http://acesegypt.org/images/1920/home.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+div{
+	width: 80%;
+	margin: 30px auto;
+	text-align: center;
+}
+h1, h3, span, p{
+	color: #fff;
+}
+h1{
+	font-size: 3em;
+}
+h3{
+	font-size: 2em;
+}
+textarea{
+	width: 100%;
+	margin: 20px 0;
+}
+form span{
+	margin-right: 25px;
+}
+input{
+	height: 30px;
+}
+input[value=Submit]{
+	width: 180px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+input[value=Submit]:hover{
+	cursor: pointer;
+	background-color: #03602c;
+}

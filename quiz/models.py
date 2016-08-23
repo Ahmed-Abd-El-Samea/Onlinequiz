@@ -1,4 +1,5 @@
 from django.db import models
+
 class Answers(models.Model):
 	phone_num = models.BigIntegerField()
 	answer1 = models.TextField()

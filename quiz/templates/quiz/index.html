@@ -1,1 +1,55 @@
-<h1>My name is ahmed!</h1>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>ACES's Task</title>
+        <link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+    </head>
+    <body>
+    	<div>
+	    	<h1>ACES Online Quiz</h1>
+	    	<h3>Answer the following questions in less than 30 minutes</h3>
+	    	<br><br>
+	    	<form action="{% url 'ans:answers' %" method="post">
+	    		{% csrf_token %}
+	    		<span>Phone number : </span>
+	    		<input type="text" name="phone_num">
+	    		<br><br><br><br>
+
+	    		<p>1- A little girl kicks a soccer ball. It goes 10 feet and comes back to her. How is this possible?</p>
+	    		<textarea name="answer1" rows="5"></textarea>
+
+	    		<p>2- A 10 foot rope ladder hangs over the side of a boat with the bottom rung on the surface of the water. The rungs are one foot apart, and the tide goes up at the rate of 6 inches per hour. How long will it be until three rungs are covered?</p>
+	    		<textarea name="answer2" rows="5"></textarea>
+
+	    		<p>3- A is the father of B. But B is not the son of A. How’s that possible?</p>
+	    		<textarea name="answer3" rows="5"></textarea>
+
+	    		<p>4- A man dressed in all black is walking down a country lane. Suddenly, a large black car without any lights on comes round the corner and screeches to a halt. How did the car know he was there?</p>
+	    		<textarea name="answer4" rows="5"></textarea>
+
+	    		<p>5- Rainbow is produced when sunlight fall on drops of rain. What are the Rainbow colors?</p>
+	    		<textarea name="answer5" rows="5"></textarea>
+
+	    		<p>6- A truck driver is going down a one way street the wrong way, and passes at least ten cops. Why is he not caught?</p>
+	    		<textarea name="answer6" rows="5"></textarea>
+
+	    		<p>7- An electric train is moving north at 100mph and a wind is blowing to the west at 10mph. Which way does the smoke blow?</p>
+	    		<textarea name="answer7" rows="5"></textarea>
+
+	    		<p>8- How can a man go eight days without sleep?</p>
+	    		<textarea name="answer8" rows="5"></textarea>
+
+	    		<p>9- What color is a polar bear?</p>
+	    		<textarea name="answer9" rows="5"></textarea>
+
+	    		<p>10- National Botanical Research Institute is located at</p>
+	    		<textarea name="answer10" rows="5"></textarea>
+
+	    		<input type="submit" value="Submit">
+	    	</form>
+	    </div>
+    </body>
+</html>
+
+
+
